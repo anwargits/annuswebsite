@@ -359,7 +359,7 @@
     background-position: 50% 50%;
     background-size: cover;
     display: inline-block;
-    transition: 0.8s;
+    transition: 0.55s;
     border: 2px solid rgba(0, 0, 0, 0.2); /* Add a border */
     /* Or you can add a box-shadow */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a box-shadow */
@@ -374,11 +374,6 @@
     border: none; /* Remove border when expanded */
     box-shadow: none; /* Remove box-shadow when expanded */
 }
-
-
-
-
-
 
 
 .portfolio .button button {
@@ -397,13 +392,43 @@
     color: #fff;
 }
 
+/* Default styles */
 
+/* Add styles that apply to all screen sizes */
 
+/* Media query for small screens (up to 767px width) */
+@media only screen and (max-width: 767px) {
+    .box {
+        margin-left: 0; /* Adjust margin for smaller screens */
+    }
+
+    .AnnuContent {
+        font-size: 20px; /* Decrease font size for smaller screens */
+    }
+
+    .headings {
+        font-size: 18px; /* Decrease font size for smaller screens */
+        gap: 30px; /* Decrease the gap between menu items */
+    }
+
+    .portfolio .slide .item {
+        width: 90%; /* Adjust the width of portfolio items for smaller screens */
+        max-width: none; /* Remove max-width for smaller screens */
+    }
+
+    .portfolio .button button {
+        width: 60px; /* Decrease button width for smaller screens */
+        height: 45px; /* Decrease button height for smaller screens */
+    }
+}
+
+/* Media query for larger screens (768px width and above) */
+@media only screen and (min-width: 768px) {
+    /* Add specific styles for larger screens if needed */
+}
 
 
 </style>
-
-
 
  <script>
     const words = ["Front End Developer", "Writer"];
