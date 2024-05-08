@@ -19,12 +19,16 @@
                 <div class="box">
                     <div class="AnnuContent">
                         <h1 style="font-size: 22px; color: #FF6864">Hola, Hello, Pradon</h1>
-                        <h1>I am Anwar Bashaa</h1>
+                        <h1>I am Anwar B</h1>
                         <h1 class="AnnuRoles"><span class="first">I'm a </span></h1>
                         <p>Wanna Website?, Let's Create!</p>
+                      
+                      <div class="button"> 
                         <button class="AnnuOneButton" onclick="window.open('https://www.linkedin.com/in/anwarbashapinjari/', '_blank')">LinkedIn</button>
 
                         <button class="AnnuTwoButton">Download Resume</button>
+                      </div>
+                       
                 </div>
                     
                 </div>
@@ -224,7 +228,6 @@
             top: 50%;
             transform: translate(0, -50%);
             border-radius: 20px;
-            /* box-shadow: 0 30px 50px #c91010; */
             background-position: 50% 50%;
             background-size: cover;
             display: inline-block;
@@ -328,7 +331,7 @@
 }
         .AnnuOneButton {
             padding: 8px;
-            background-color: #FF6864;
+         background-color: #FF6864;
             color: white;
             border: none;
             font-size: 22px;
@@ -341,13 +344,6 @@
             font-size: 22px;
         }
            
-        
-
-
-
-
-
-
 
         .portfolio .slide .item {
     width: 200px;
@@ -392,18 +388,24 @@
     color: #fff;
 }
 
-/* Default styles */
-
-/* Add styles that apply to all screen sizes */
-
-/* Media query for small screens (up to 767px width) */
 @media only screen and (max-width: 767px) {
     .box {
-        margin-left: 0; /* Adjust margin for smaller screens */
+        margin-left: 20vw; 
+    }
+
+    .headings{
+        flex-direction: column;
+        margin-right: auto;
+    }
+
+    .button{
+        flex-direction: column;
+        margin: 10px;
+    
     }
 
     .AnnuContent {
-        font-size: 20px; /* Decrease font size for smaller screens */
+        font-size: 10px; /* Decrease font size for smaller screens */
     }
 
     .headings {
@@ -429,6 +431,46 @@
 
 
 </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  <script>
     const words = ["Front End Developer", "Writer"];
@@ -477,7 +519,7 @@ document.querySelector('.slide').appendChild(items[0])
 
 prev.addEventListener('click', function(){
 let items = document.querySelectorAll('.item')
-document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+document.querySelector('.slide').prepend(items[items.length - 1])
 })
 
 
@@ -485,5 +527,4 @@ document.querySelector('.slide').prepend(items[items.length - 1]) // here the le
 
 </body>
 </html>
-
 
